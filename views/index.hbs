@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<head>
+		<meta charset="UTF-8" />
+		<title>Partiu Clan!!!</title>
+		<link rel="stylesheet" href="css/main.css"></link>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/velocity.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/jquery.countTo.js"></script>
+		<script src="js/jquery.easing.min.js"></script>
+		<script src="js/base.js"></script>
+		<script src="js/back.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<canvas id="snow-canvas"></canvas>
+			<div class="header__offset">
+				<div class="header__wrapper">
+					<div class="header__left">
+						<div class="header__corner"></div>
+						<div class="header__logo">
+							<a href="#" class="logo">
+								<span class="logo__img">
+									<img src="images/logo_ny.png"></img>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="header__navbar">
+						<div class="navbar">
+							<div class="navbar__nav"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main  main--colorful">
+			<div class="main__container">
+				<div class="wrapper__wrapper" style="width:20%;">
+					<form id="loginform" action="login" method="post">
+						<div class="wrapper__space b-freebie" style="margin-left:-4px;">
+							<div class="page-title"></div>
+						</div>
+						<div class="roulette__balance__input">
+							<input type="text" placeholder="Usuário" name="login"></input>
+						</div>
+						<div class="roulette__balance__input">
+							<input type="password" placeholder="Senha" name="password"></input>
+						</div>
+						<div class="crash__btn hidden" style="padding-left:40px;">
+							<a href="#" onclick="loginform.submit();" class="bet-butt __silver  gologin" withdraw="false">
+								<span>Entrar</span>
+							</a>
+						</div>
+					</form>
+				</div>
+				<div class="footer-block">
+					<div class="footer-content">
+						<div class="center-text">
+							<span>Todos os direitos reservados © 2018 Eduardo Araujo Tolentino</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>$(document).keypress(function(e){if (e.which == 13 || event.keyCode == 13){loginform.submit();}});</script>
+	</body>
+</html>

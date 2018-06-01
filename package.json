@@ -1,0 +1,22 @@
+{
+  "name": "discordserver",
+  "author": "Eduardo Araujo Tolentino <eduaratol@gmail.com>",
+  "description": "Servidor de administração do Discord.",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": 
+  {
+    "start": "node ./bin/www"
+  },
+  "dependencies": 
+  {
+    "http": "~0.0.0",
+    "path": "~0.12.7",
+    "serve-favicon": "~2.5.0",
+    "cookie-parser": "~1.4.3",
+    "body-parser": "~1.18.3",
+    "express": "~4.14.0",
+    "mongodb": "^2.2.33",
+    "hbs": "~3.1.0"
+  }
+}

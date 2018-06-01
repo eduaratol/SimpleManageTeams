@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<head>
+		<meta charset="UTF-8" />
+		<title>Partiu Clan!!!</title>
+		<link rel="stylesheet" href="css/main.css"></link>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/velocity.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/jquery.countTo.js"></script>
+		<script src="js/jquery.easing.min.js"></script>
+		<script src="js/sweetalert.js"></script>
+		<script src="js/base.js"></script>
+		<script src="js/back.js"></script>
+		<script src="js/admin.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="gamespace" >
+				<script src="js/main.js"></script>
+				<link href="css/free-style.css" rel="stylesheet" type="text/css" />
+				<div style="display:none"; id='neewWAIT'>this</div>
+				<div style="display:none"; id='neewWAITSkin'>this</div>
+				<div class="crash__btn hidden" style="padding-left:20px;height:100px;width:100%;background-color:#171c21;"></div>
+				<div class="wrapper wrapper--colorful">
+					<div class="wrapper__offset __no-transition">
+						<div class="wrapper__wrapper">
+							<div class="wrapper__space b-freebie">
+								<div class="page-title">
+									<h1>Editar Conta:</h1>
+								</div>
+								<div class="b-freebie-tab b-freebie-conditions" style="width:50%;margin:auto;">
+									<form id="accountform" action="updateaccount" method="post">
+										<input type="hidden" id="id" name="id"></input>
+										<div class="roulette__balance__input">
+											<input type="text" placeholder="Nome completo" name="name"></input>
+										</div>
+										<div class="roulette__balance__input">
+											<input type="file" onchange="Base64Converter()" id="image" name="image"></input>
+											<input type="hidden" id="base64image" name="base64image"></input>
+										</div>
+										<div class="crash__btn hidden" style="padding-left:20px;">
+											<a href="#" onclick="accountform.submit();" class="bet-butt __silver  gologin" withdraw="false">
+												<span>Atualizar</span>
+											</a>
+										</div>
+									</form>
+									<form id="updatewinup" action="updatewinup" method="post">
+										<input type="hidden" id="id2" name="id2"></input>
+										<div class="crash__btn hidden" style="padding-left:20px;">
+											<a href="#"  onclick="updatewinup.submit();" class="bet-butt __silver  gologin" withdraw="false">
+												<span>Adicionar Vitoria</span>
+											</a>
+										</div>
+									</form>
+									<form id="updatewindown" action="updatewindown" method="post">
+										<input type="hidden" id="id3" name="id3"></input>
+										<div class="crash__btn hidden" style="padding-left:20px;">
+											<a href="#" onclick="updatewindown.submit();" class="bet-butt __silver  gologin" withdraw="false">
+												<span>Remover Vitoria</span>
+											</a>
+										</div>
+									</form>
+									<div class="crash__btn hidden" style="padding-left:20px;height:40px;"></div>
+									<div class="crash__btn hidden" style="padding-left:20px;">
+										<a href="admin" class="bet-butt __  gologin" withdraw="false">
+											<span style="color:black;">Voltar</span>
+										</a>
+									</div>
+									<div class="crash__btn hidden" style="padding-left:20px;height:20px;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+      $(function()
+      {
+        document.getElementById("id").value = location.search.split('id=')[1];
+        document.getElementById("id2").value = location.search.split('id=')[1];
+        document.getElementById("id3").value = location.search.split('id=')[1];
+      });
+    </script>
+	</body>
+</html>

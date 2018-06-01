@@ -1,0 +1,53 @@
+<div class="gamespace">
+	<script src="js/main.js"></script>
+	<link href="css/free-style.css" rel="stylesheet" type="text/css" />
+	<div style="display:none"; id='neewWAIT'>this</div>
+	<div style="display:none"; id='neewWAITSkin'>this</div>
+	<div class="wrapper wrapper--colorful">
+		<div class="wrapper__offset __no-transition">
+			<div class="wrapper__wrapper">
+				<div class="wrapper__space b-freebie" style="height:1000px;">
+					<div class="page-title">
+						<h1>Conta:</h1>
+					</div>
+					<div class="breadcrumbs">
+						<ul class="clearfix"></ul>
+					</div>
+					<div class="b-freebie-subnav">
+						<button class="b-f-subnav-btn active" data-tab="b-freebie-conditions">Criar Conta</button>
+						<button class="b-f-subnav-btn" data-tab="b-freebie-weeksplay">Editar Conta</button>
+					</div>
+					<div class="b-freebie-tab b-freebie-conditions" style="width:50%;margin:auto;">
+						<form id="accountform" action="createaccount" method="post">
+							<div class="roulette__balance__input">
+								<input type="text" placeholder="Nome completo" name="name"></input>
+							</div>
+							<div class="roulette__balance__input">
+								<input type="text" placeholder="Usuário" name="login"></input>
+							</div>
+							<div class="roulette__balance__input">
+								<input type="password" placeholder="Senha" name="password"></input>
+							</div>
+							<div class="roulette__balance__input">
+								<input type="email" placeholder="E-Mail" name="email"></input>
+							</div>
+							<div class="roulette__balance__input">
+								<input type="file" onchange="Base64Converter()" id="image" name="image"></input>
+								<input type="hidden" id="base64image" name="base64image"></input>
+							</div>
+							<div class="crash__btn hidden" style="padding-left:20px;">
+								<a href="#" onclick="accountform.submit();" class="bet-butt __silver  gologin" withdraw="false">
+									<span>Cadastrar</span>
+								</a>
+							</div>
+						</form>
+					</div>
+					<div class="b-freebie-tab b-freebie-weeksplay">
+						<table id="table" border="1" style="border:1px solid black;width:100%;padding:4px;"></table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>{{{ script }}} </script>

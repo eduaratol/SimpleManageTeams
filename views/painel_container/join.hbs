@@ -1,0 +1,88 @@
+<div class="gamespace">
+	<script src="js/main.js"></script>
+	<link href="css/free-style.css" rel="stylesheet" type="text/css" />
+	<div style="display:none"; id='neewWAIT'>this</div>
+	<div style="display:none"; id='neewWAITSkin'>this</div>
+	<div class="wrapper wrapper--colorful">
+		<div class="wrapper__offset __no-transition">
+			<div class="wrapper__wrapper">
+				<div class="wrapper__space b-freebie">
+					<div class="b-freebie-subnav">
+						<button class="b-f-subnav-btn active" data-tab="b-freebie-conditions">ESCOLHA O JOGO</button>
+						<button class="b-f-subnav-btn" data-tab="b-freebie-weeksplay">PRESENÇA</button>
+					</div>
+					<div class="b-freebie-tab b-freebie-conditions" >
+						<table border="0" style="text-align:left;margin-top:100px;margin:auto;">
+							<tr>
+								<th colspan="2" style="color:white;font-size:14px;">(OBS: O seu voto determinara o jogo em que você vai jogar, Exemplo: CS ganhou, então a preferência da fila vai ser para as pessoas que escolheram CS.</th>
+							</tr>
+						</table>
+						<form id="voteform" action="vote" method="POST">
+							<input type="hidden" value="0" name="vote" id="vote" />
+							<table border="0" style="text-align:center;margin:auto;width:100%;">
+								<tr height="200">
+									<th width="200">
+										<a href="#" onclick="ChoseGame(1)">
+											<img class="chose-game-img" src="images/lolicon.png"/>
+										</a>
+									</th>
+									<th width="200">
+										<a href="#" onclick="ChoseGame(2)">
+											<img class="chose-game-img" src="images/csgoicon.png"/>
+										</a>
+									</th>
+									<th width="200">
+										<a href="#" onclick="ChoseGame(3)">
+											<img class="chose-game-img" src="images/left4dead2icon.png"/>
+										</a>
+									</th>
+									<th width="200">
+										<a href="#" onclick="ChoseGame(0)">
+											<img class="chose-game-img" src="images/qualquericon.png"/>
+										</a>
+									</th>
+								</tr>
+							</table>
+						</form>
+					</div>
+					<div class="b-freebie-tab b-freebie-weeksplay">
+						<form id="presenceform" action="presence" method="POST">
+							<input type="hidden" value="0" name="presence" id="presence" />
+							<table border="0" style="text-align:left;margin:auto;width:100%;">
+								<tr>
+									<th colspan="2" style="color:white;font-size:14px;">(OBS: As vagas serão preenchidas por ordem de inscrição. Em caso de desistência será convocado os suplentes caso houver.)</th>
+								</tr>
+								<tr style="text-align:center;height:240px;">
+									<th width="50%">
+										<a href="#" onclick="ConfirmPresence(false)">
+											<img class="confirm-img" src="images/desistiricon.png"/>
+										</a>
+									</th>
+									<th width="50%">
+										<a href="#" onclick="ConfirmPresence(true)">
+											<img class="confirm-img" src="images/confirmaricon.png"/>
+										</a>
+									</th>
+								</tr>
+								<tr style="text-align:center;">
+									<th colspan="2">
+										<a href="#" onclick="AlterView('confirmed', 1)">
+											<img class="hvr-float-shadow" src="images/confirmadosbutton.png"/>
+										</a>
+									</th>
+								</tr>
+								<tr style="text-align:center;">
+									<th colspan="2">
+										<a href="#" onclick="AlterView('progress', 1)">
+											<img class="hvr-float-shadow" src="images/andamentobutton.png"/>
+										</a>
+									</th>
+								</tr>
+							</table>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
